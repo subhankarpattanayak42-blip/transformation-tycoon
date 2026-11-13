@@ -1,0 +1,112 @@
+/* Case study & teaching note — reading layout, exhibits, print */
+
+body.case-page{font-size:16.5px}
+
+.case-main{max-width:840px; padding-top:56px; padding-bottom:72px}
+
+.eyebrow{
+  font-size:12px; font-weight:700; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--accent-2); margin:0 0 14px;
+}
+.case-title{
+  font-family:var(--serif); font-weight:600; letter-spacing:-.02em;
+  font-size:clamp(30px,4.4vw,44px); line-height:1.14; margin:0 0 18px; max-width:24ch;
+}
+.case-title .sub{display:block; font-size:.62em; color:var(--muted); margin-top:8px; letter-spacing:-.01em}
+
+.case-main .lede{font-size:19px; color:var(--muted); max-width:58ch; margin-bottom:32px}
+
+.case-h{
+  font-family:var(--serif); font-weight:600; font-size:clamp(22px,2.8vw,28px);
+  letter-spacing:-.015em; margin:52px 0 16px; padding-top:22px;
+  border-top:1px solid var(--line-soft); display:block;
+}
+.case-h3{
+  font-family:var(--sans); font-size:16px; font-weight:700; letter-spacing:0;
+  margin:30px 0 10px; color:var(--ink);
+}
+
+.case-main p{max-width:66ch; line-height:1.68}
+.case-main ul,.case-main ol{max-width:66ch}
+.case-main li{margin-bottom:10px}
+
+/* notices */
+.notice{
+  background:var(--tint); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:8px; padding:18px 22px; margin:28px 0; font-size:15px; max-width:66ch;
+}
+.notice.warn{background:var(--tint-warm); border-left-color:var(--accent-2)}
+.notice.small-note{font-size:14.5px; color:var(--muted)}
+.notice strong{color:var(--ink)}
+
+/* parable block */
+.parable{
+  border:1px solid var(--line); border-left:3px solid var(--accent-2);
+  background:var(--surface); border-radius:8px; padding:20px 24px; margin:26px 0;
+  max-width:66ch;
+}
+.parable p{font-family:var(--serif); font-size:16.5px; line-height:1.6; margin:0 0 12px}
+.parable p:last-child{margin-bottom:0}
+
+/* questions */
+.qlist{padding-left:24px}
+.qlist li{font-size:16px; margin-bottom:12px; line-height:1.55}
+
+/* exhibits */
+table.ex{
+  width:100%; border-collapse:collapse; margin:22px 0 26px; font-size:14.5px;
+  background:var(--surface); border:1px solid var(--line); border-radius:8px; overflow:hidden;
+}
+table.ex caption{
+  caption-side:top; text-align:left; font-size:11.5px; font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--accent-2); padding:0 0 9px;
+}
+table.ex th,table.ex td{padding:10px 14px; border-bottom:1px solid var(--line-soft); vertical-align:top}
+table.ex thead th{
+  font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--muted);
+  background:var(--tint); border-bottom:1px solid var(--line);
+}
+table.ex tbody tr:last-child td{border-bottom:0}
+table.ex td.num,table.ex th.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+table.ex tr.total td{font-weight:700; border-top:1px solid var(--line); background:color-mix(in srgb, var(--tint) 60%, transparent)}
+table.ex.tight th,table.ex.tight td{padding:9px 11px; font-size:14px}
+table.ex.tight td:first-child{white-space:nowrap}
+
+/* defects (teaching note) */
+.defect{
+  background:var(--surface); border:1px solid var(--line); border-radius:10px;
+  padding:20px 24px; margin:20px 0; max-width:70ch;
+}
+.defect h4{
+  font-size:13px; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
+  color:var(--accent-2); margin:0 0 10px;
+}
+.defect p{font-size:15.5px; margin:0 0 12px}
+.defect p:last-child{margin-bottom:0}
+
+.teach-point{
+  font-family:var(--serif); font-size:17.5px; line-height:1.55; color:var(--ink);
+  border-left:3px solid var(--accent); padding-left:18px; margin:24px 0; max-width:62ch;
+}
+
+.case-actions{margin-top:44px; padding-top:26px; border-top:1px solid var(--line-soft)}
+
+/* print — clean handouts */
+@media print{
+  .site-head,.site-foot,.case-actions{display:none !important}
+  body.case-page{font-size:10.5pt; background:#fff; color:#000}
+  .case-main{max-width:none; padding:0}
+  .case-h{page-break-after:avoid; margin-top:22pt}
+  .case-h3{page-break-after:avoid}
+  table.ex,.defect,.notice,.parable{page-break-inside:avoid}
+  .notice,.defect,.parable,table.ex{border-color:#bbb; background:#fff}
+  table.ex thead th{background:#eee; color:#000}
+  a{color:#000; text-decoration:none}
+  @page{margin:18mm 16mm}
+}
+
+@media screen and (max-width:700px){
+  .case-main{padding-top:36px}
+  body.case-page{font-size:16px}
+  table.ex.tight td:first-child{white-space:normal}
+}

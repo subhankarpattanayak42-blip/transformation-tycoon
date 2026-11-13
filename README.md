@@ -18,6 +18,10 @@ connects them.
 | `assets/poster-*.jpg` | Video poster frames |
 | `assets/deck/` | The 15 slides, rendered as images for the in-page viewer |
 | `assets/transformation-tycoon-deck.pdf` | The deck as PDF (510 KB), for presenting or printing |
+| `case.html` | Student case — Northline Retail: The ₹60 Crore Question |
+| `teaching-note.html` | Instructor teaching note (analysis, board plan, discussion flow) |
+| `assets/northline-case-student.pdf` | Student case as PDF, 9 pages |
+| `assets/northline-teaching-note.pdf` | Teaching note as PDF, 8 pages |
 
 The playable game is a separate repository, deployed at
 [subu-prog.github.io/transformation-tycoon](https://subu-prog.github.io/transformation-tycoon/).

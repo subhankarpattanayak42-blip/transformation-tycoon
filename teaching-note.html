@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teaching note — Northline Retail: The ₹60 Crore Question</title>
+<meta name="description" content="Instructor teaching note for the Northline Retail case: analysis, board plan, discussion flow and answer guidance.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/case.css">
+</head>
+<body class="case-page">
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="index.html">Transformation&nbsp;Tycoon</a>
+    <nav>
+      <a href="index.html">Overview</a>
+      <a href="case.html">Case</a>
+      <a href="teaching-note.html" aria-current="page">Teaching note</a>
+      <a class="nav-play" href="https://subu-prog.github.io/transformation-tycoon/" target="_blank" rel="noopener">Play&nbsp;&nearr;</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap case-main">
+
+  <p class="eyebrow">Teaching note &middot; Instructor</p>
+  <h1 class="case-title">Teaching note<br><span class="sub">Northline Retail: The ₹60 Crore Question</span></h1>
+
+  <div class="notice warn">
+    <strong>Instructor material.</strong> This page contains the analysis, the planted inconsistencies and suggested answers. Do not circulate it with the student case.
+  </div>
+
+  <h2 class="case-h">1. Synopsis</h2>
+  <p>Northline Retail has spent ₹22.4 crore on fourteen AI initiatives in fourteen months, with three in production. The board has approved ₹60 crore for the next phase and must choose between a foundations-first platform programme and a nine-month scaling of the two most promising pilots. The Chief Digital Officer has three days to recommend one.</p>
+  <p>The case forces a choice between two defensible positions, and it hides a defect in one of them.</p>
+
+  <h2 class="case-h">2. Learning objectives</h2>
+  <p>By the end of the discussion students should be able to:</p>
+  <ol class="qlist">
+    <li>Distinguish a <strong>sequencing</strong> decision from a <strong>selection</strong> decision, and explain why transformation failures are usually the former.</li>
+    <li>Identify technical debt created by workarounds that are described as temporary, and cost it.</li>
+    <li>Read a vendor contract for lock-in rather than for price.</li>
+    <li>Explain why a 41% override rate is evidence about the organisation, not about the model.</li>
+    <li>Interrogate a business case for internal consistency, and say what evidence would be required before signing it.</li>
+  </ol>
+
+  <h2 class="case-h">3. Where it sits</h2>
+  <p>Runs best after students have met the three pillars of research framing and the concept of technical debt, and either before or after the Transformation Tycoon game. Sequence that works well:</p>
+  <ul>
+    <li><strong>Before the game:</strong> the case sets up the concepts, the game makes them felt, the debrief makes them explicit.</li>
+    <li><strong>After the game:</strong> students recognise the case's dilemmas from play, and the discussion moves faster and deeper.</li>
+  </ul>
+  <p>Pairs naturally with the Baron Coburg video, which supplies the parable the case tests.</p>
+
+  <h2 class="case-h">4. Pre-class assignment</h2>
+  <p>Students read the case and the four exhibits, and bring a one-page recommendation answering three questions:</p>
+  <ol class="qlist">
+    <li>Which proposal, in one sentence?</li>
+    <li>The single strongest argument against your choice.</li>
+    <li>One number in the exhibits you do not believe, and why.</li>
+  </ol>
+  <p>The third question is the one that separates preparation from skimming. Do not reveal why in advance.</p>
+
+  <h2 class="case-h">5. The analysis</h2>
+  <p>The case is not really about AI. It is about what a company does when it has spent money without buying anything durable. Four facts decide the answer, and only one of them is financial.</p>
+
+  <h3 class="case-h3">5.1 The manual pipeline is the debt</h3>
+  <p>Two analysts spend six hours a day assembling the data extract that feeds demand forecasting. This is described as temporary and has been for eighteen months. Cost it plainly: roughly twelve person-hours a day, undocumented, held by two people, with 30% attrition in the function. Proposal B scales this dependency to 210 stores. That is not scaling a model; it is scaling a workaround.</p>
+  <p>This is the case's central debt, and the argument students most often miss because it is buried in a paragraph rather than a table.</p>
+
+  <h3 class="case-h3">5.2 The override rate is an organisational fact</h3>
+  <p>Forty-one per cent of recommendations are overridden and nobody has asked why. Two readings are possible and both should be heard:</p>
+  <ul>
+    <li><em>Management reading:</em> the tool is not trusted because it was never explained, no store manager has been trained (0 of 210), and the incentives still reward sales floor judgement. The model may be fine.</li>
+    <li><em>Technical reading:</em> the recommendations are wrong often enough that experienced managers have learned to ignore them.</li>
+  </ul>
+  <p>The case deliberately cannot resolve this, because Northline never asked. That is the point: an unexamined override rate is a missing measurement, and it sits directly underneath the 8% uplift that Proposal B is built on.</p>
+
+  <h3 class="case-h3">5.3 The vendor contract is a lock-in, not a price</h3>
+  <p>Read Exhibit 3 as a list of exits rather than a list of costs:</p>
+  <ul>
+    <li>A <strong>240-store minimum commitment</strong> against a company with 210 stores.</li>
+    <li><strong>8% annual escalation</strong> from year three.</li>
+    <li><strong>Vendor-supplied benchmarks accepted as evidence of benefit</strong> — the measurement is defined by the party being measured.</li>
+    <li><strong>18 months' notice</strong> and a ₹2.2 crore extraction fee to leave.</li>
+  </ul>
+  <p>That fourth line in the contract is the same disease as the Baron Coburg infographic: a number produced by an interested party, accepted because it is printed.</p>
+
+  <h3 class="case-h3">5.4 Governance is already a paid-for lesson</h3>
+  <p>The chatbot made a refund promise the company could not keep. Nothing was built afterwards. Northline has no responsible AI policy, no model register, no review process, and monitoring on one of three production models. Proposal B funds "minimal governance" at ₹5 crore, bundled with integration — which in practice means it will be the first line cut.</p>
+
+  <h2 class="case-h">6. The planted defects</h2>
+  <p>Proposal B does not survive arithmetic. This mirrors the Baron Coburg video, where the flashy case is the one that fails to reconcile. Three defects, in increasing difficulty:</p>
+
+  <div class="defect">
+    <h4>Defect 1 — the licence line is priced for stores that do not exist</h4>
+    <p>₹4.6 lakh per store per year. The company has 210 stores: 210 × ₹4.6 lakh = <strong>₹9.66 crore</strong> for a full year. Proposal B's licence line is <strong>₹11 crore</strong> for a nine-month rollout.</p>
+    <p>₹11 crore ÷ ₹4.6 lakh = <strong>240 stores</strong> — exactly the contract's minimum commitment. The proposal is priced on the vendor's minimum, not on Northline's estate. Thirty stores are being paid for that the company does not have.</p>
+  </div>
+
+  <div class="defect">
+    <h4>Defect 2 — the payback does not follow from the benefits</h4>
+    <p>Spend ₹46 crore, claimed payback 19 months. Cumulative benefit at month 19 using the proposal's own figures: ₹19 crore in year one, plus seven months of year two at ₹31 crore a year ≈ ₹18.1 crore, giving <strong>₹37.1 crore</strong> — about ₹9 crore short.</p>
+    <p>Payback is nearer <strong>month 22</strong>. To reach ₹46 crore by month 19 the year-two run rate would have to be above ₹46 crore, not ₹31 crore.</p>
+    <p>For contrast, Proposal A's stated 34 months <em>does</em> reconcile: ₹6 crore plus ₹18 crore gives ₹24 crore by month 24, and the remaining ₹34 crore at a ₹41 crore annual rate lands at month 34.</p>
+  </div>
+
+  <div class="defect">
+    <h4>Defect 3 — nine use cases from two line items</h4>
+    <p>The benefits table claims <strong>nine use cases in production by month 24</strong>. Proposal B funds two: demand forecasting and recommendations. The other seven pilots have no funding line. The number nine appears nowhere in the cost side of the proposal.</p>
+  </div>
+
+  <p class="teach-point">Teaching move: do not announce these. Ask for the third question from the pre-class assignment, then put the licence line on the board and wait. A student who multiplies ₹4.6 lakh by 210 has found it. Let them explain it to the room.</p>
+
+  <h2 class="case-h">7. Board plan</h2>
+  <p>Four columns, built live with the class, left to right:</p>
+  <table class="ex">
+    <thead><tr><th>Column</th><th>What goes there</th></tr></thead>
+    <tbody>
+      <tr><td><strong>What we know</strong></td><td>14 pilots, 3 in production, ₹22.4 crore spent, 2 credible pilots, 41% override, 0 managers trained</td></tr>
+      <tr><td><strong>What we don't know</strong></td><td>Why managers override; whether the 8% uplift survives a full year; what the manual pipeline costs</td></tr>
+      <tr><td><strong>What it costs to be wrong</strong></td><td>Debt scaled to 210 stores; vendor lock at 240 stores; governance debt priced in trust</td></tr>
+      <tr><td><strong>What we would do</strong></td><td>The recommendation, with its first three actions and its kill criterion</td></tr>
+    </tbody>
+  </table>
+  <p>The second column is the one to protect. Students reach for a decision before they have listed what they do not know, and the case rewards the ones who notice the missing measurement.</p>
+
+  <h2 class="case-h">8. Discussion flow</h2>
+
+  <h3 class="case-h3">75-minute version</h3>
+  <table class="ex tight">
+    <thead><tr><th class="num">Min</th><th>Move</th></tr></thead>
+    <tbody>
+      <tr><td class="num">0&ndash;5</td><td>Cold open: "What is this board actually deciding?" Reject any answer containing "AI".</td></tr>
+      <tr><td class="num">5&ndash;15</td><td>Poll the room on A versus B. Record the split. Ask two students from each side for one sentence.</td></tr>
+      <tr><td class="num">15&ndash;30</td><td>Interrogate the numbers. Ask for the number they do not believe. Drive to the licence line.</td></tr>
+      <tr><td class="num">30&ndash;45</td><td>The override rate. Split the room deliberately: half argue management, half argue model.</td></tr>
+      <tr><td class="num">45&ndash;58</td><td>Cost the manual pipeline. Who carries it? What happens at 210 stores?</td></tr>
+      <tr><td class="num">58&ndash;70</td><td>Re-poll. Who changed their mind, and what changed it?</td></tr>
+      <tr><td class="num">70&ndash;75</td><td>Close on the Chairman's line: the farmer with the impressive harvest.</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="case-h3">60-minute version</h3>
+  <p>Compress the poll to 3 minutes, merge the override and pipeline discussions into one 20-minute block, and keep the closing re-poll — it is where the learning becomes visible.</p>
+
+  <h2 class="case-h">9. Anticipated answers</h2>
+  <table class="ex tight">
+    <thead><tr><th>Student says</th><th>Instructor pushes</th></tr></thead>
+    <tbody>
+      <tr><td>"B — it pays back faster and the company needs a win."</td><td>Show me the payback. Which line did you check?</td></tr>
+      <tr><td>"A — you always build foundations first."</td><td>Then why is A's year-one benefit ₹6 crore? What does the board tell its shareholders for eighteen months?</td></tr>
+      <tr><td>"Both — do a hybrid."</td><td>Hybrids are how companies fund neither. Name the single thing you would not cut.</td></tr>
+      <tr><td>"The override rate means the model is bad."</td><td>Zero managers were trained. What else could explain 41%?</td></tr>
+      <tr><td>"The vendor is the problem."</td><td>Northline signed the contract. What did it agree to measure, and who chose that measure?</td></tr>
+      <tr><td>"Scale one pilot, not two."</td><td>Good. Which one, and what do you do about the analysts who feed it?</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="case-h">10. Common errors</h2>
+  <ul>
+    <li><strong>Treating the financial table as data.</strong> It is a claim, and one row of it is wrong.</li>
+    <li><strong>Recommending a hybrid without a constraint.</strong> "Do both, phased" is not a decision.</li>
+    <li><strong>Missing the analysts.</strong> Students who never mention the manual pipeline have missed the case's spine.</li>
+    <li><strong>Reading governance as compliance cost.</strong> The chatbot incident already priced it.</li>
+    <li><strong>Ignoring the 240-store minimum.</strong> Even students who catch the licence error often miss that the minimum is why the error exists.</li>
+  </ul>
+
+  <h2 class="case-h">11. What a strong answer looks like</h2>
+  <p>There is no single right answer, but a strong one has the same shape:</p>
+  <ol class="qlist">
+    <li>Names the constraint before the choice — usually capability and measurement, not money.</li>
+    <li>Recommends one path, and states the condition under which the other would be correct.</li>
+    <li>Costs the temporary workaround, in hours and in key-person risk.</li>
+    <li>Rejects at least one figure, with arithmetic.</li>
+    <li>Attaches a kill criterion: what would tell you, by month nine, that you were wrong.</li>
+  </ol>
+  <p>A recommendation of B is acceptable if the student reprices the licence line, funds governance separately, and puts the analysts on a platform path. A recommendation of A is acceptable if the student can say what the board sees in year one.</p>
+
+  <h2 class="case-h">12. Links to the rest of the class</h2>
+  <ul>
+    <li><strong>Baron Coburg video</strong> — the parable the case tests. Bushels as demo metrics, the plough as debt, the ploughmaker's bill as vendor liability.</li>
+    <li><strong>Transformation Tycoon</strong> — students who have played recognise the fast-track decision, the half-value rule without a Change Management Office, and the event card that bills an unprepared team.</li>
+    <li><strong>Debrief question to carry over:</strong> "Which team led after round 3, and which team won?" maps exactly onto Vikram's payback argument.</li>
+  </ul>
+
+  <div class="case-actions btn-row">
+    <a class="btn btn-primary" href="assets/northline-teaching-note.pdf" target="_blank" rel="noopener">Open the teaching note PDF</a>
+    <a class="btn btn-ghost" href="case.html">&larr; Student case</a>
+  </div>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Teaching note</strong> &mdash; Northline Retail case. Instructor material; do not distribute with the student case.</p>
+    <p class="small">Prepared by Subhankar Pattanayak, IMI Bhubaneswar.</p>
+  </div>
+</footer>
+
+</body>
+</html>

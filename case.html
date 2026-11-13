@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northline Retail: The ₹60 Crore Question — Teaching Case</title>
+<meta name="description" content="A decision-forcing case on sequencing an AI transformation in a legacy retail chain, for classroom discussion.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/case.css">
+</head>
+<body class="case-page">
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="index.html">Transformation&nbsp;Tycoon</a>
+    <nav>
+      <a href="index.html">Overview</a>
+      <a href="case.html" aria-current="page">Case</a>
+      <a href="teaching-note.html">Teaching note</a>
+      <a class="nav-play" href="https://subu-prog.github.io/transformation-tycoon/" target="_blank" rel="noopener">Play&nbsp;&nearr;</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap case-main">
+
+  <p class="eyebrow">Teaching case &middot; Student version</p>
+  <h1 class="case-title">Northline Retail: The ₹60&nbsp;Crore Question</h1>
+  <p class="lede">Fourteen AI pilots. Three in production. Twenty-two crore spent. A board that wants a decision by Friday.</p>
+
+  <div class="notice">
+    <strong>This case is fictional.</strong> Northline Retail, its people and its figures are constructed for classroom discussion. The arithmetic is internally consistent so that it can be examined — but it is not a record of any real company.
+  </div>
+
+  <h2 class="case-h">1. Friday's board meeting</h2>
+
+  <p>Ananya Rao has been Chief Digital Officer at Northline Retail for fourteen months. On Tuesday evening she sits with two documents on her screen and a board meeting in three days.</p>
+
+  <p>The board has approved <strong>₹60 crore</strong> for the next phase of the company's AI programme. It has not approved what to spend it on. Two proposals are on the table, and they disagree about almost everything.</p>
+
+  <p>The first is hers. The second belongs to Vikram Shetty, the Chief Operating Officer, who has run Northline's stores for eleven years and who has a fair claim to know what happens when a new system reaches a shop floor.</p>
+
+  <p>The board will not fund both. The Chairman has said he wants a recommendation, not a menu.</p>
+
+  <h2 class="case-h">2. The company</h2>
+
+  <p>Northline Retail runs <strong>210 stores</strong> across six states, mostly grocery and household, with revenue of <strong>₹4,200 crore</strong> in the last financial year. It is thirty-eight years old. Its point-of-sale system was written in 2009 and is maintained by two contractors. Store-level data reaches head office through a nightly batch, which means that by the time a category manager sees yesterday's sales, it is usually tomorrow.</p>
+
+  <p>Ananya was hired to change this. She was given a small team and a mandate: make Northline a company that uses its data.</p>
+
+  <h2 class="case-h">3. Fourteen pilots, three in production</h2>
+
+  <p>Over fourteen months, Northline has run fourteen AI initiatives. Three are in production. Four have been paused, shelved or dropped. Seven are still pilots.</p>
+
+  <p>Total spend to date: <strong>₹22.4 crore</strong>. Of this, ₹14.1 crore was operating expenditure and ₹8.3 crore capital.</p>
+
+  <p>Two pilots are genuinely promising. Store-level recommendations ran in sixty stores for eleven weeks and lifted basket size in a controlled test. Demand forecasting, run across forty stores, reduced stock-outs in the categories it covered.</p>
+
+  <p>Neither has reached all 210 stores. Neither has been measured against a formal internal baseline. The demand forecasting model is fed by a data extract that two analysts assemble by hand each morning — a solution described in every steering committee as "temporary" for the last eighteen months. It takes them about six hours a day, and only they know how it works.</p>
+
+  <p>Store managers override the recommendation engine's suggestions <strong>41% of the time</strong>. Nobody has asked them why.</p>
+
+  <p>A customer-facing chatbot was paused after it told a customer that a refund had been approved when it had not. Northline has no responsible AI policy, no model register and no review process. The chatbot incident cost the company a social media complaint and, internally, some credibility.</p>
+
+  <p>The team is four data engineers and two analysts. There is no MLOps capability, no model monitoring, and no process for retiring a model that stops working. The last data engineer took five months to hire.</p>
+
+  <h2 class="case-h">4. The two proposals</h2>
+
+  <p><strong>Proposal A — Foundations first.</strong> Ananya's proposal spends the money on the things that make later use cases possible, and takes two of the existing pilots to production along the way.</p>
+
+  <table class="ex">
+    <caption>Proposal A — Foundations first (24 months)</caption>
+    <thead><tr><th>Line item</th><th class="num">₹ crore</th></tr></thead>
+    <tbody>
+      <tr><td>Data platform consolidation</td><td class="num">22</td></tr>
+      <tr><td>Governance and responsible AI policy</td><td class="num">4</td></tr>
+      <tr><td>MLOps capability and twelve hires</td><td class="num">9</td></tr>
+      <tr><td>Change Management Office and store training</td><td class="num">8</td></tr>
+      <tr><td>Two use cases to production</td><td class="num">9</td></tr>
+      <tr><td>Contingency</td><td class="num">6</td></tr>
+      <tr class="total"><td>Total</td><td class="num">58</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>Proposal B — Scale the winners.</strong> Vikram's proposal takes the two promising pilots to all 210 stores within nine months, and returns the balance to the board for store refurbishment.</p>
+
+  <table class="ex">
+    <caption>Proposal B — Scale the winners (9 months)</caption>
+    <thead><tr><th>Line item</th><th class="num">₹ crore</th></tr></thead>
+    <tbody>
+      <tr><td>Demand forecasting to 210 stores</td><td class="num">16</td></tr>
+      <tr><td>Recommendations to 210 stores</td><td class="num">14</td></tr>
+      <tr><td>Vendor licence expansion</td><td class="num">11</td></tr>
+      <tr><td>Integration and minimal governance</td><td class="num">5</td></tr>
+      <tr class="total"><td>Total</td><td class="num">46</td></tr>
+      <tr><td>Returned to the board for store refurbishment</td><td class="num">14</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="case-h3">What each side claims</h3>
+
+  <table class="ex">
+    <caption>Claimed benefits, as presented to the board</caption>
+    <thead><tr><th>Measure</th><th class="num">Proposal A</th><th class="num">Proposal B</th></tr></thead>
+    <tbody>
+      <tr><td>Year 1 benefit</td><td class="num">₹6 crore</td><td class="num">₹19 crore</td></tr>
+      <tr><td>Year 2 benefit</td><td class="num">₹18 crore</td><td class="num">₹31 crore</td></tr>
+      <tr><td>Year 3 benefit</td><td class="num">₹41 crore</td><td class="num">₹34 crore</td></tr>
+      <tr><td>Payback</td><td class="num">34 months</td><td class="num">19 months</td></tr>
+      <tr><td>Use cases in production by month 24</td><td class="num">2</td><td class="num">9</td></tr>
+    </tbody>
+  </table>
+
+  <p>Vikram's argument is straightforward and hard to argue with in a boardroom. <em>We have spent twenty-two crore and we have three things working. The company has two proven pilots and you want to spend two years building plumbing. Show me the store that opens because of a data platform.</em></p>
+
+  <p>Ananya's argument is less comfortable. <em>The two pilots you want to scale are running on two analysts and a spreadsheet. Scale them to 210 stores and you scale that dependency too. The chatbot already showed what happens when we ship without governance. And if we spend the sixty crore on scaling, we will have spent it, and we will still be unable to do the next thing.</em></p>
+
+  <h2 class="case-h">5. What the board has been told</h2>
+
+  <p>At the last board meeting, a non-executive director circulated a short video about a landlord, two farmers and an infographic. It has been passed around the company since, half as a joke.</p>
+
+  <div class="parable">
+    <p><strong>Ivan</strong> brings in 223 bushels — the bigger harvest — but his plough is broken beyond repair and he still owes the ploughmaker. <strong>Frederick</strong> brings in only 105, but his equipment is preserved for more seasons.</p>
+    <p>The infographic reports 10.7 against 12.2 net per acre, and calls Frederick about 14% better. When the figures are checked against the case data, they do not reconcile. The video says so itself: unresolved, not verified, illustrative rather than a calculation of return.</p>
+    <p>Then it translates the story: bushels become <em>demo vanity metrics</em>; seed and fertiliser become <em>tokens and compute</em>; the ox becomes <em>shared platform infrastructure</em>; the plough becomes <em>scaffolding and tech debt</em>; and the ploughmaker's bill becomes <em>unpaid vendor liabilities</em>.</p>
+  </div>
+
+  <p>The Chairman's only remark at that meeting was that he did not want Northline to be remembered as the farmer with the impressive harvest.</p>
+
+  <h2 class="case-h">6. The decision</h2>
+
+  <p>On Friday the board will choose one proposal. Ananya must bring a recommendation, and she must be able to defend it against a COO who will argue that the company cannot afford another two years of preparation.</p>
+
+  <p>She has three days, two proposals, and one question she has not yet answered honestly: <strong>whether the numbers in front of her are any better than the infographic.</strong></p>
+
+  <h2 class="case-h">7. Discussion questions</h2>
+
+  <ol class="qlist">
+    <li>What is the actual decision the board is being asked to make? Restate it in one sentence without using the word "AI".</li>
+    <li>Which proposal would you recommend, and what would have to be true for the other one to be right?</li>
+    <li>Examine the claimed benefits in Exhibit&nbsp;3. Which of these figures would you refuse to sign off on, and why?</li>
+    <li>Ananya describes the manual data extract as "temporary". What is the cost of it being temporary for eighteen months, and who is carrying that cost?</li>
+    <li>Forty-one per cent of recommendations are overridden by store managers. Is that a technology problem or a management problem — and does the answer change your recommendation?</li>
+    <li>If the board chooses Proposal&nbsp;B, what would you put in place to stop it becoming Proposal&nbsp;A two years late?</li>
+  </ol>
+
+  <h2 class="case-h">Exhibits</h2>
+
+  <h3 class="case-h3">Exhibit 1 — The fourteen initiatives</h3>
+  <table class="ex tight">
+    <thead><tr><th>#</th><th>Initiative</th><th class="num">Spend (₹ cr)</th><th>Status</th><th>Claimed benefit</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Demand forecasting (40 stores)</td><td class="num">3.2</td><td>Pilot</td><td>12% fewer stock-outs</td></tr>
+      <tr><td>2</td><td>Store recommendations (60 stores)</td><td class="num">2.8</td><td>Pilot</td><td>8% basket uplift</td></tr>
+      <tr><td>3</td><td>Customer service chatbot</td><td class="num">1.9</td><td>Paused</td><td>—</td></tr>
+      <tr><td>4</td><td>Invoice OCR (finance)</td><td class="num">0.9</td><td>In production</td><td>62% touchless processing</td></tr>
+      <tr><td>5</td><td>Store staff scheduling (12 stores)</td><td class="num">1.4</td><td>Pilot</td><td>6% roster efficiency</td></tr>
+      <tr><td>6</td><td>Shrinkage anomaly detection (8 stores)</td><td class="num">1.1</td><td>Pilot</td><td>Not measured</td></tr>
+      <tr><td>7</td><td>Assortment planning</td><td class="num">2.3</td><td>Shelved</td><td>—</td></tr>
+      <tr><td>8</td><td>Price elasticity engine</td><td class="num">1.7</td><td>Shelved</td><td>—</td></tr>
+      <tr><td>9</td><td>Warehouse route optimisation (2 DCs)</td><td class="num">1.6</td><td>Pilot</td><td>4% transport cost</td></tr>
+      <tr><td>10</td><td>Shelf-scan vision (5 stores)</td><td class="num">1.2</td><td>Pilot</td><td>Not measured</td></tr>
+      <tr><td>11</td><td>HR screening</td><td class="num">0.4</td><td>Dropped</td><td>—</td></tr>
+      <tr><td>12</td><td>Category manager copilot (20 users)</td><td class="num">0.8</td><td>Pilot</td><td>Self-reported time saved</td></tr>
+      <tr><td>13</td><td>Loyalty churn model</td><td class="num">1.3</td><td>In production</td><td>Retained cohort, unmeasured</td></tr>
+      <tr><td>14</td><td>Voice-of-customer analytics</td><td class="num">1.8</td><td>In production</td><td>Used weekly by marketing</td></tr>
+      <tr class="total"><td></td><td>Total</td><td class="num">22.4</td><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="case-h3">Exhibit 2 — Where the money went</h3>
+  <table class="ex">
+    <thead><tr><th>Category</th><th class="num">₹ crore</th></tr></thead>
+    <tbody>
+      <tr><td>Operating expenditure (pilots, vendors, contractors)</td><td class="num">14.1</td></tr>
+      <tr><td>Capital expenditure (licences, hardware, integration)</td><td class="num">8.3</td></tr>
+      <tr class="total"><td>Total spend to date</td><td class="num">22.4</td></tr>
+      <tr><td>Board-approved for next phase</td><td class="num">60.0</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="case-h3">Exhibit 3 — Vendor contract, key terms</h3>
+  <table class="ex">
+    <tbody>
+      <tr><td>Licence</td><td>₹4.6 lakh per store per year</td></tr>
+      <tr><td>Minimum commitment</td><td>240 stores</td></tr>
+      <tr><td>Price escalation</td><td>8% per annum from year 3</td></tr>
+      <tr><td>Benefit measurement</td><td>Vendor-supplied benchmark accepted as evidence of benefit</td></tr>
+      <tr><td>Exit</td><td>18 months' notice, plus a ₹2.2 crore data extraction fee</td></tr>
+      <tr><td>Data residency</td><td>Hosted outside India; no commitment on model retraining</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="case-h3">Exhibit 4 — Capability today</h3>
+  <table class="ex">
+    <tbody>
+      <tr><td>Data engineers</td><td>4</td></tr>
+      <tr><td>Analysts</td><td>2</td></tr>
+      <tr><td>MLOps engineers</td><td>0</td></tr>
+      <tr><td>Average time to hire a data engineer</td><td>5 months</td></tr>
+      <tr><td>Data engineering attrition, last 12 months</td><td>30%</td></tr>
+      <tr><td>Store managers trained on AI tools</td><td>0 of 210</td></tr>
+      <tr><td>Models in production with monitoring</td><td>1 of 3</td></tr>
+    </tbody>
+  </table>
+
+  <div class="notice small-note">
+    <strong>A note on the figures.</strong> All amounts are constructed for this case. They are set out so that they can be checked with arithmetic, and some of them should be checked.
+  </div>
+
+  <div class="case-actions btn-row">
+    <a class="btn btn-primary" href="assets/northline-case-student.pdf" target="_blank" rel="noopener">Open the case PDF</a>
+    <a class="btn btn-ghost" href="teaching-note.html">Teaching note &rarr;</a>
+  </div>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>Northline Retail</strong> &mdash; a constructed teaching case for a class on IT and AI transformation.</p>
+    <p class="small">Prepared by Subhankar Pattanayak, IMI Bhubaneswar. Fictional company; figures constructed for discussion. Pairs with the Transformation Tycoon board game and the Baron Coburg case video.</p>
+  </div>
+</footer>
+
+</body>
+</html>
