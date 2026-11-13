@@ -4,7 +4,8 @@ Teaching material for a 60-minute management class on IT and AI transformation:
 a classroom board game, a case video in two languages, and the pedagogy that
 connects them.
 
-**Live site:** https://subhankarpattanayak42-blip.github.io/transformation-tycoon/
+**Showcase site:** https://subhankarpattanayak42-blip.github.io/transformation-tycoon/
+**Play the game:** https://subu-prog.github.io/transformation-tycoon/
 
 ## What is here
 
@@ -15,6 +16,12 @@ connects them.
 | `assets/baron-coburg-en.mp4` | Case video, English narration (1:32) |
 | `assets/baron-coburg-bn.mp4` | Case video, Bengali narration (1:41), same visuals |
 | `assets/poster-*.jpg` | Video poster frames |
+
+The playable game is a separate repository, deployed at
+[subu-prog.github.io/transformation-tycoon](https://subu-prog.github.io/transformation-tycoon/).
+It is a client-side app backed by a Google Apps Script endpoint and a Google
+Sheet, and has three entry screens: team, facilitator and projector. This site
+links to it and explains it; it does not host it.
 
 ## The teaching problem
 
