@@ -16,6 +16,8 @@ connects them.
 | `assets/baron-coburg-en.mp4` | Case video, English narration (1:32) |
 | `assets/baron-coburg-bn.mp4` | Case video, Bengali narration (1:41), same visuals |
 | `assets/poster-*.jpg` | Video poster frames |
+| `assets/deck/` | The 15 slides, rendered as images for the in-page viewer |
+| `assets/transformation-tycoon-deck.pdf` | The deck as PDF (510 KB), for presenting or printing |
 
 The playable game is a separate repository, deployed at
 [subu-prog.github.io/transformation-tycoon](https://subu-prog.github.io/transformation-tycoon/).
